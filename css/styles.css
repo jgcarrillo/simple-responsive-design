@@ -1,0 +1,163 @@
+/* ---.---.---. PRIMER EJEMPLO CON TRES CONTENEDORES ---.---.---. */
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin: 0px auto;
+    font-size: 30px;
+}
+
+h1{
+    margin-bottom: 20px;
+}
+
+#contenedor-uno{
+    width: 90%;
+    margin-top: 50px;
+}
+
+.elemento{
+    width: 33%;
+    float: left;
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.green{
+    background-color: green;
+}
+
+@media (max-width: 990px){
+    h1{
+        font-size: 25px;
+    }
+
+    .elemento{
+        width: 50%;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+
+    .under{
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px){
+    h1{
+        font-size: 20px;
+    }
+
+    .elemento{
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+.clearfix{
+    clear: both;
+}
+
+/* ---.---.---. SEGUNDO EJEMPLO CON TRES IMÁGENES ---.---.---. */
+
+#contenedor-dos{
+    margin-top: 50px;
+    box-sizing: border-box;
+    width: 90%;
+}
+
+.imagen img{
+    float: left;
+    width: 33%;
+    height: auto;
+    cursor: pointer;
+}
+
+@media (max-width: 990px){
+    .imagen img{
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .tercera{
+        clear: both;
+        display: block;
+        width: 200%;
+    }
+}
+
+@media (max-width: 650px){
+    .tercera, .imagen img{
+        width: 100%;
+    }
+}
+
+/* ---.---.---. TERCER EJEMPLO CON TRES ENLACES ---.---.---. */
+
+#contenedor-tres{
+    width: 90%;
+    margin-top: 50px;
+}
+
+#contenedor-tres > ul{
+    list-style: none;
+    padding-left: 0px;
+}
+
+#contenedor-tres > ul > li{
+    width: 33%;
+    float: left;
+    background-color: #333333;
+    height: 80px;
+    line-height: 80px;
+    transition: all 300ms;
+    cursor: pointer;
+}
+
+#contenedor-tres > ul > li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+}
+
+#contenedor-tres > ul > li:hover{
+    background-color: #70b231;
+    box-shadow: 0px 0px 4px green inset;
+}
+
+@media (max-width: 990px){
+    #contenedor-tres > ul > li{
+        width: 49%;
+    }
+
+    #contenedor-tres > ul > li#tres{
+        width: 98%;
+    }
+
+    #contenedor-tres > ul > li a{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 650px){
+    #contenedor-tres > ul > li{
+        width: 100%;
+    }
+
+    #contenedor-tres > ul > li#tres{
+        width: 100%;
+    }
+
+    #contenedor-tres > ul > li a{
+        font-size: 20px;
+    }
+}
